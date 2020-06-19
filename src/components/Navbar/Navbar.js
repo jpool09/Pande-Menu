@@ -26,7 +26,7 @@ export default function DenseAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" color="#fcbf1e">
-            Menú
+            Covid Pande-Menu
           </Typography>
         </Toolbar>
       </AppBar>
