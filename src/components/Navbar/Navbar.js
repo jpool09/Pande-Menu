@@ -4,6 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
+import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
 import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme) => ({
@@ -27,7 +28,7 @@ export default function DenseAppBar() {
           </IconButton> */}
           <Typography variant="h6" color="#fcbf1e">
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
+            <DeveloperModeIcon />
             <a className="pandemenu" href="http://localhost:3003/"><strong>Pande</strong>Menu</a>
           </IconButton>
           </Typography>
