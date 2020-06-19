@@ -1,18 +1,17 @@
 import React, {useState, useEffect } from 'react';
-import Info from "./../Info/Info"
-import SearchInfo from "./../SearchInfo/SearchInfo"
+import CountryInfo from "./../CountryInfo/CountryInfo"
 import axios from 'axios';
 import Particles from "react-particles-js";
 import { Grid } from "@material-ui/core";
 
-const InfoManager = () => {
-    const [info, setInfo] = useState({});
+const CountryManager = () => {
+    const [country, setCountry] = useState({});
 
     const getInfo = () => {
         axios.get("https://api.covid19api.com/summary")
         
         .then(({data})=>{
-            setInfo(data);
+            setCountry(data);
         })
         
     };
@@ -77,25 +76,23 @@ const InfoManager = () => {
     <>
         {/* <h1>Covid-19</h1>
         {JSON.stringify(info)} */}
-        {/* <header className="app-header" >
+        <header className="app-header" >
           <h3>Pande-Menu</h3>
-        </header> */}
-		<header className="app-header" >
-          <h4>PandeMenu COVID-19 </h4>
         </header>
         <Grid container direction="row" justify="center" alignItems="center">
-            <Info
-                date={info.Date}
-                NewConfirmed={info.Global && info.Global.NewConfirmed}
-                TotalConfirmed={info.Global && info.Global.TotalConfirmed}
-                NewDeaths={info.Global && info.Global.NewDeaths}
-                TotalDeaths={info.Global && info.Global.TotalDeaths}
-                NewRecovered={info.Global && info.Global.NewRecovered}
-                TotalRecovered={info.Global && info.Global.TotalRecovered}
-            />
+          {/* <SearchInfo Countries={country.Countries} /> */}
         </Grid>
-		<Grid container direction="row" justify="center" alignItems="center">
-          <SearchInfo Countries={info.Countries} />
+        <Grid container direction="row" justify="center" alignItems="center">
+            <CountryInfo
+                date={country.Date}
+                Countries={country.Countries}
+                NewConfirmed={country.Global && country.Global.NewConfirmed}
+                TotalConfirmed={country.Global && country.Global.TotalConfirmed}
+                NewDeaths={country.Global && country.Global.NewDeaths}
+                TotalDeaths={country.Global && country.Global.TotalDeaths}
+                NewRecovered={country.Global && country.Global.NewRecovered}
+                TotalRecovered={country.Global && country.Global.TotalRecovered}
+            />
         </Grid>
         <Grid container direction="row" justify="center" alignItems="center">
           {/* <CountryInfo Countries={info.Countries} /> */}
@@ -104,4 +101,4 @@ const InfoManager = () => {
     </>)
 };
 
-export default InfoManager;
+export default CountryManager;

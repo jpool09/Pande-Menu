@@ -1,24 +1,36 @@
+  
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 
-function Navbar () {
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+}));
+
+export default function DenseAppBar() {
+  const classes = useStyles();
+
   return (
-    <nav className= "navbar navbar-expand-lg navbar-light bg-light">
-    <a className="navbar-brand" href="#">Covid Pande-Menu</a>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
-        <li className="nav-item active">
-          <a className="nav-link" href="src/views/HomeView/HomeView.js">Home <span className="sr-only">(current)</span></a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="src/views/MundialView/MundialView.js">MundialView</a>
-        </li>
-      </ul>
+    <div className={classes.root}>
+      <AppBar position="static">
+        <Toolbar variant="dense">
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" color="#fcbf1e">
+            Menú
+          </Typography>
+        </Toolbar>
+      </AppBar>
     </div>
-  </nav>
-);
-} 
-
-export default Navbar;
+  );
+}

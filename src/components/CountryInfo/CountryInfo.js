@@ -1,30 +1,41 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
-  Card,
-  TableContainer,
-  Table,
-  TableHead,
-  TableBody,
-  TableRow,
-  TableCell,
-  TablePagination,
-} from "@material-ui/core"
+    Card,
+    TableContainer,
+    Table,
+    TableHead,
+    TableBody,
+    TableRow,
+    TableCell,
+    TablePagination,
+  } from "@material-ui/core";
 
-const CountryInfo = ({ Countries }) => {
+const CountryInfo = ({
+    date,
+    Countries,
+    NewConfirmed,
+    TotalConfirmed,
+    NewDeaths,
+    TotalDeaths,
+    NewRecovered,
+    TotalRecovered,
+}) => {
+    
     const [page, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(5);
+    const [rowsPerPage, setRowsPerPage] = useState(5);
 
-  const handleChangePage = (event, newPage) => {
-    setPage(newPage);
-  };
+    const handleChangePage = (event, newPage) => {
+      setPage(newPage);
+    };
 
-  const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(+event.target.value);
-    setPage(0);
-  };
+    const handleChangeRowsPerPage = (event) => {
+      setRowsPerPage(+event.target.value);
+      setPage(0);
+    };          
 
-  return (
-    <Card className="card card-form-table">
+    return (
+      
+      <Card className="card card-form-table">
       <TableContainer>
         <Table>
           <TableHead>
@@ -70,7 +81,7 @@ const CountryInfo = ({ Countries }) => {
         onChangeRowsPerPage={handleChangeRowsPerPage}
       />
     </Card>
-  );
+    );
 };
 
 export default CountryInfo;
