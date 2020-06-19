@@ -1,12 +1,13 @@
 import React from 'react';
-import CountryInfo from './../../components/CountryInfo/CountryInfo';
-import InfoManager from './../../components/InfoManager/InfoManager';
+import Navbar from "./../../components/Navbar/Navbar";
+import CountryManager from './../../components/CountryManager/CountryManager';
 
 
 function MundialView() {
   return (
     <>
-      <CountryInfo/>
+      <Navbar/>
+      <CountryManager/>
     </>
   );
 }

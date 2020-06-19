@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import IconNewConfirmed from "@material-ui/icons/AddAlert";
 import IconTotalConfirmed from "@material-ui/icons/AirlineSeatFlat";
 import IconNewDeaths from "@material-ui/icons/NewReleases";
@@ -14,6 +13,7 @@ import {
     ListItem,
     ListItemText,
     ListItemAvatar,
+    Button
   } from "@material-ui/core";
 
 const Info = ({
@@ -29,6 +29,13 @@ const Info = ({
 
     return (
       <>
+        <div className="parrafo-container">
+          <p className="parrafo">
+            Este proyecto se realizo con la finalidad de informar a las personas de la situación actual del mundo con 
+            respecto al virus COVID-19. Esperamos darle una mano a aquella persona que busque información sobre la Pandemia.
+          
+          </p>
+        </div>
         {/* Nuevos Confirmados */}
         <Card className="card-info">
           <CardHeader
@@ -154,6 +161,11 @@ const Info = ({
             </List>
           </div>
         </Card>
+        <div className="button-container">
+          <Button variant="contained" color="primary" href="/mundial">
+            Ver más Datos
+          </Button>
+        </div>
       </>
     );
 };

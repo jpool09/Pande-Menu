@@ -28,14 +28,21 @@ class SearchInfo extends Component {
 
     return (
         <>
+        <div className="title-container">
+          <h4>Buscador</h4>
+        </div>
+        <div className="text-container">
+          <p>Con este buscador encontrarás los datos de cualquiera de los paises del mundo. Te mostrará datos muy exactos </p>
+        </div>
         <Card className="card card-form">
-            <CardHeader
+            {/* <CardHeader
             title="Busque la información del país"
             subheader="Que desee conocer confirmados, muertes y recuperados"
-            />
+            /> */}
             <div className="space">
             <form noValidate>
                 <input
+                className="input-country"
                 type="text"
                 list="data"
                 placeholder="Buscar país..."

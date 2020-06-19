@@ -16,6 +16,9 @@ import {
 const SearchCountryInfo = ({ Countries }) => {
   return (
     <>
+      <div>
+        <h4>Buscador</h4>
+      </div>
       <h2>País: {Countries.Country}</h2>
       <div className="card-row">
         <List>

@@ -1,9 +1,12 @@
 import React from 'react';
+import Navbar from "./../../components/Navbar/Navbar";
 import NotFound from './../../components/NotFound/NotFound';
 
 
 function View404() {
-  return (<>
+  return (
+    <>
+      <Navbar/>
       <NotFound/>
     </>
   );

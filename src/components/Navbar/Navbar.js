@@ -22,12 +22,20 @@ export default function DenseAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar variant="dense">
+          {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <MenuIcon />
+          </IconButton> */}
+          <Typography variant="h6" color="#fcbf1e">
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
+            <a className="pandemenu" href="http://localhost:3003/"><strong>Pande</strong>Menu</a>
           </IconButton>
-          <Typography variant="h6" color="#fcbf1e">
-            Menú
           </Typography>
+          <div>
+            <a className="a-menu" href="/*">404</a>
+            <a className="a-menu" href="/mundial">Mundo</a>
+            <a className="a-menu" href="/">Home</a>
+          </div>
         </Toolbar>
       </AppBar>
     </div>

@@ -6,6 +6,7 @@ import IconTotalDeaths from "@material-ui/icons/MoodBad";
 import IconNewRecovered from "@material-ui/icons/AccessibilityNew";
 import IconTotalRecovered from "@material-ui/icons/EmojiEmotions";
 import Particles from "react-particles-js";
+import Image from 'material-ui-image'
 import {
     Card,
     CardHeader,
@@ -13,7 +14,7 @@ import {
     Avatar,
     ListItem,
     ListItemText,
-    ListItemAvatar,
+	ListItemAvatar,
   } from "@material-ui/core";
     
 
@@ -68,6 +69,8 @@ import {
           <header className="app-header" >
           <h3>404 - Not Found</h3>
         </header>
+		<Image href="./Images/404.png" />
+		{/* <Image src="http://loremflickr.com/300/200" /> */}
         <Particles className="particles" params={paramsParticles} />
         </>
       );

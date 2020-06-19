@@ -13,6 +13,13 @@
   margin-bottom: 50px;
 }
 
+.app-header h4 {
+  color: white;
+  text-shadow: 0px 0px 8px rgba(237, 239, 241, 0.25);
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
 /** CARDS GLOBAL **/
 .card {
   width: 750px;
@@ -27,14 +34,14 @@
 .card-info {
   width: 400px;
   margin-top: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   margin-left: 50px;
   margin-right: 50px;
   text-align: center;
   color: white !important;
   border: 1px solid #fcbf1e;
   background-color: #282c34 !important;
-  box-shadow: 0px 0px 6px 2px rgba(25, 118, 210, 0.25) !important;
+  box-shadow: 0px 0px 6px 2px rgb(250, 235, 24) !important;
 }
 
 .card-form {
@@ -43,8 +50,8 @@
 }
 
 .card-form-table {
-  border: 1px solid #651fff;
-  box-shadow: 0px 0px 6px 2px rgba(101, 31, 255, 0.25) !important;
+  border: 1px solid #fcbf1e;
+  box-shadow: 0px 0px 6px 2px rgba(255, 240, 31, 0.25) !important;
 }
 
 .card span,
@@ -121,8 +128,8 @@ th,
 td {
   color: white !important;
   text-align: center !important;
-  border-bottom: 1px solid #651fff !important;
-  box-shadow: 0 3px 2px -2px rgba(101, 31, 255, 0.25) !important;
+  border-bottom: 1px solid #fcbf1e !important;
+  box-shadow: 0 3px 2px -2px rgb(250, 235, 24) !important;
 }
 
 th {
@@ -163,4 +170,90 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: rgba(211, 211, 211, 0.4);
+}
+
+.button-container{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.parrafo-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pandemenu{
+  padding: 10px;
+  background-color: transparent;
+  border: 1px transparent;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+p{
+  width: 45%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.title-container{
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.a-menu{
+  float: right;
+  margin-left: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.MuiToolbar-root{
+  display: flex;
+  justify-content: space-between;
+}
+
+.MuiAppBar-colorPrimary{
+  background-color: #035aa6 !important;
+}
+
+.MuiButton-label {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.text-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.input-country{
+  margin-top: 25px;
+}
+
+/*Footer Container*/
+.footer-container{
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 100px;
 }
