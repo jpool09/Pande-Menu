@@ -29,7 +29,7 @@ export default function DenseAppBar() {
           <Typography variant="h6" color="#fcbf1e">
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <DeveloperModeIcon />
-            <a className="pandemenu" href="http://localhost:3003/"><strong>Pande</strong>Menu</a>
+            <a className="pandemenu" href="/"><strong>Pande</strong>Menu</a>
           </IconButton>
           </Typography>
           <div>
