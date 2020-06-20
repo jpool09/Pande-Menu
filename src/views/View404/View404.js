@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from "./../../components/Navbar/Navbar";
 import NotFound from './../../components/NotFound/NotFound';
-import Footer from "./../../components/Footer/Footer"
 
 
 function View404() {
@@ -9,7 +8,6 @@ function View404() {
     <>
       <Navbar/>
       <NotFound/>
-      <Footer/>
     </>
   );
 }

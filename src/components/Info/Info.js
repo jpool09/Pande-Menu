@@ -33,7 +33,6 @@ const Info = ({
           <p className="parrafo">
             Este proyecto se realizo con la finalidad de informar a las personas de la situación actual del mundo con 
             respecto al virus COVID-19. Esperamos darle una mano a aquella persona que busque información sobre la Pandemia.
-          
           </p>
         </div>
         {/* Nuevos Confirmados */}

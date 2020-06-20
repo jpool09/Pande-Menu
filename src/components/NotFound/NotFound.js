@@ -62,15 +62,19 @@ import {
 	        }
 	    },
 	    "retina_detect": true
-    };
+	};
 
     return (
         <>
-          <header className="app-header" >
+          <header className="header404" >
           <h3>404 - Not Found</h3>
         </header>
-		<Image href="./Images/404.png" />
-		{/* <Image src="http://loremflickr.com/300/200" /> */}
+		<div className="pc">
+		<p>¡Lo sentimos, esta dirección no se encuentra disponible!</p>
+		</div>
+		<div className="pc">
+		<p>¡Esperamos que vuelva pronto!</p>
+		</div>
         <Particles className="particles" params={paramsParticles} />
         </>
       );

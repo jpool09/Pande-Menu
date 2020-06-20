@@ -34,7 +34,13 @@ const CountryInfo = ({
     };          
 
     return (
-      
+      <>
+      <div className="parrafo-country">
+          <p className="parrafo">
+            A continuación se muestra una tabla con la información principal de la pandemia en todos los paises del mundo, esperamos sea de su agrado y
+            les ayude a encontrar lo que buscaban!
+          </p>
+        </div>
       <Card className="card card-form-table">
       <TableContainer>
         <Table>
@@ -81,6 +87,7 @@ const CountryInfo = ({
         onChangeRowsPerPage={handleChangeRowsPerPage}
       />
     </Card>
+    </>
     );
 };
 

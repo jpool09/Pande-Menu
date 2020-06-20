@@ -257,3 +257,25 @@ p{
   font-weight: bold;
   margin-top: 100px;
 }
+
+.header404{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  margin-top: 100px;
+  color: white;
+}
+
+.pc{
+  display: flex;
+  justify-content: center;
+}
+
+.parrafo-country{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
